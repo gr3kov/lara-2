@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+    laravel:
+        build:
+            context: laravel
+        depends_on:
+            - mysql
+        restart: unless-stopped
+        volumes:
+            - C:/new_makeup:/var/www 
+        ports:
+          - 9000:9000
+        env_file: ./.env
+    nginx:
+        image: nginx:latest
+        ports:
+            - 80:80
+        depends_on:
+            - laravel
+        restart: unless-stopped
+        volumes:
+            - C:/new_makeup:/var/www
+            - ./nginx/conf.d:/etc/nginx/conf.d
+            - ./nginx/log:/var/log/nginx
+            - ./nginx/usr/share/nginx/html:/usr/share/nginx/html:ro
+    mysql:
+        image: mariadb:latest
+        environment:
+          - MYSQL_ROOT_PASSWORD=9MFTUAkj
+        restart: unless-stopped
+        volumes:
+          - ./mysql/db:/var/lib/mysql
+        ports:
+          - 3306:3306

@@ -1,0 +1,33 @@
+User-agent: *
+Disallow: /login
+Disallow: /archive
+Disallow: /register
+
+User-agent: Yandex
+Disallow: /login
+Disallow: /archive
+Disallow: /register
+
+Host: https://royal-auction.com/
+
+User-agent: Googlebot
+Disallow: /login
+Disallow: /archive
+Disallow: /register
+
+User-agent: msnbot
+Crawl-Delay: 10
+
+User-agent: MJ12bot
+Crawl-Delay: 20
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+Sitemap: https://royal-auction.com/sitemap.xml

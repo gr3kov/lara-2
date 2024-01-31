@@ -1,0 +1,32 @@
+.row1__col4 {
+    position: relative;
+    flex: 1 1 30%;
+    border: none;
+}
+
+.row1__col1 {
+    background: none !important;
+    padding: 0;
+}
+
+.row1__col4 .progress-step-heading:before {
+
+    background: #ffa01c;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.item-cener {
+    align-items: center;
+}
+
+.row1__col1-paragraph {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    padding: 2rem;
+}

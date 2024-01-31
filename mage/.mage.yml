@@ -1,0 +1,50 @@
+magephp:
+  log_dir: ./logs
+  environments:
+    production:
+      user: deploy
+      from: ../
+      host_path: /home/deploy/www/royal-auction.com/app
+      releases: 10
+      exclude:
+        - ../public/images
+        - ../storage
+        - ../.idea
+        - ../.mage
+        - ../deploy
+        - ../.env.example
+        - ../.env
+      hosts:
+        - royal
+      pre-deploy:
+      on-deploy:
+        - exec: { cmd: 'ln -s ../../../shared/config/.env ./', desc: 'Create symlink to config env file' }
+        - exec: { cmd: 'ln -s ../../../shared/storage ./storage', desc: 'Create symlink to storage shared folder' }
+        - exec: { cmd: 'ln -s ../../../../shared/images ./public', desc: 'Create symlink to images shared folder' }
+      on-release:
+      post-release:
+      post-deploy:
+    stage:
+      user: deploy
+      from: ../
+      host_path: /home/deploy/www/stage.royal-auction.com/app
+      releases: 10
+      exclude:
+        - ../public/images
+        - ../storage
+        - ../.idea
+        - ../.mage
+        - ../deploy
+        - ../.env.example
+        - ../.env
+      hosts:
+        - royal
+      pre-deploy:
+      on-deploy:
+        - exec: { cmd: 'ln -s ../../../shared/config/.env ./', desc: 'Create symlink to config env file' }
+        - exec: { cmd: 'ln -s ../../../shared/storage ./storage', desc: 'Create symlink to storage shared folder' }
+        - exec: { cmd: 'ln -s ../../../../shared/images ./public', desc: 'Create symlink to images shared folder' }
+        - exec: { cmd: 'ln -s ../../../../utils ./public', desc: 'Create symlink to utils folder' }
+      on-release:
+      post-release:
+      post-deploy:

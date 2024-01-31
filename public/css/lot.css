@@ -1,0 +1,1047 @@
+@charset "UTF-8";
+.lot__modal-award-name {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 50px 0 40px;
+}
+.lot__modal-award-img {
+  width: 100px;
+}
+.lot__modal .modal-img {
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+.lot__modal .modal-img:after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.lot__back-link {
+  display: inline-block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.4) !important;
+  background: #171a1e;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 15px 20px 15px 30px;
+  margin-bottom: 40px;
+}
+.lot__back-link:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  width: 1px;
+  height: 8px;
+  border-right: 2px solid #6d6f74;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.3s ease;
+}
+.lot__back-link:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 16px;
+  width: 1px;
+  height: 8px;
+  border-right: 2px solid #6d6f74;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: 0.3s ease;
+}
+.lot__main {
+  display: flex;
+}
+.lot__about {
+display: none;
+}
+.lot__about .item{margin: 10px auto;}
+.lot__about .item .title{
+  color: #ffffff;
+  font-weight: 700;
+  margin: 5px auto;
+}
+.lot__about .item .description{}
+.lot__about_show {
+  display: block;
+}
+.lot__about .item{margin: 10px auto;}
+.lot__about .item .title{
+  color: #ffffff;
+  font-weight: 700;
+  margin: 5px auto;
+}
+.lot__about .item .description{}
+.lot__about_row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.lot__about_description {
+  margin-left: 5px;
+}
+.lot__col1 {
+  flex: 1 1 65%;
+  display: flex;
+  align-items: flex-start;
+}
+.lot__col2 {
+  position: relative;
+  flex: 1 1 20%;
+  margin-left: 20px;
+}
+.lot__col2-heading {
+  font-size: 16px;
+}
+.lot__col2 .line-separator {
+  margin: 20px 0 10px;
+}
+.lot__col2 .user-avatar-wrapper {
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 25px;
+  max-height: 25px;
+  width: 25px;
+  height: 25px;
+}
+.lot__col2 .user-email {
+  margin: 0 15px;
+  word-break: break-word;
+}
+.lot__col2 .user-date {
+  margin-left: auto;
+  color: rgba(255, 255, 255, 0.4);
+}
+.lot__list {
+  display: none;
+  padding-right: 20px;
+  overflow-y: auto;
+  max-height: 390px;
+  scrollbar-width: thin;
+  scrollbar-color: #a9a9a9 #2f3032;
+}
+.lot__list.is-active {
+  display: block;
+}
+.lot__list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.lot__list::-webkit-scrollbar-track {
+  background: #2f3032;
+}
+.lot__list::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 10px;
+  border: 0px none #000000;
+}
+.lot__list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.lot__progress-steps {
+  height: 400px !important;
+  padding-left: 5px;
+}
+.lot__progress-steps__btn {
+  margin-top: 10px;
+  font-size: 12px !important;
+  padding: 5px 10px !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+.lot__progress-steps__tracknum {
+  position: relative;
+  cursor: pointer;
+  width: auto !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+}
+.lot__progress-steps__tracknum .tooltip-text {
+  transition: 0.4s ease;
+}
+.lot__progress-steps__tracknum:hover .tooltip-text {
+  visibility: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 0;
+}
+.lot__progress-steps__tracknum.is-active .tooltip-text {
+  visibility: visible;
+  -webkit-appearance: auto;
+  appearance: auto;
+  opacity: 1;
+}
+.lot__progress-steps__tracknum:after {
+  display: inline-block;
+  position: relative;
+  content: url("../img/icons/copy.svg");
+  margin-left: 7px;
+}
+.lot__progress-steps__smp {
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+.lot__progress-steps__smp span {
+  color: rgba(255, 255, 255, 0.7);
+}
+.lot__progress-steps__bigp {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.lot__progress-steps .progress-step {
+  padding-bottom: 50px;
+  transition: 0.5s background-image ease !important;
+}
+.lot__progress-steps
+.progress-step:not(.lot__progress-steps .progress-step:last-child)
+.progress-step-heading:after {
+  border: 1px solid #ffa01c;
+}
+.lot__progress-steps .progress-step:before {
+  transition: 0.5s background-image ease !important;
+}
+.lot__progress-steps .progress-step.swiper-slide-prev {
+  z-index: 11;
+}
+.lot__progress-steps .progress-step.swiper-slide-prev:before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(23, 26, 30, 0.8) 30%
+  );
+  width: calc(100% + 50px);
+  left: -50px;
+  top: -200px;
+  height: 300px;
+  z-index: 12;
+}
+.lot__progress-steps .progress-step.swiper-slide-next {
+  z-index: 11;
+}
+.lot__progress-steps .progress-step.swiper-slide-next:before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(23, 26, 30, 0.8) 30%
+  );
+  width: calc(100% + 50px);
+  left: -50px;
+  top: -50px;
+  height: 250px;
+  z-index: 12;
+}
+.lot__progress-steps .progress-step.is-active .progress-step-heading:before {
+  width: 11px;
+  height: 11px;
+  left: -31px;
+  border: 2.5px solid #231f20;
+  outline: 2px solid #ffa01c;
+  background: #ffa01c;
+  z-index: 2;
+}
+.lot__progress-steps .progress-step-heading {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.lot__progress-steps .progress-step-heading:before {
+  border-radius: 50%;
+  border: 4px solid #ffa01c;
+}
+.lot__card {
+  flex: 1 1 30%;
+  background: rgba(128, 137, 176, 0.4);
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.page.review .lot__card {
+  padding-bottom: 60px;
+  flex: 1 1 13%;
+}
+.lot__card-visual {
+  position: relative;
+  flex: 1 1 auto;
+  max-height: 310px;
+}
+.page.review .lot__card-visual {
+  max-height: 370px;
+}
+.lot__card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.lot__card-img img {
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.lot__card-sticker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  font-weight: 400;
+  font-size: 10px;
+  background: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px 5px 35px;
+  line-height: 1.2;
+  z-index: 2;
+}
+.lot__card-sticker:before {
+  content: url(../img/money.svg);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+}
+.lot__card-sticker.sticker-deposit.type2 .lot__card-sticker:before{top: 0;}
+.lot__card-sticker.sticker-deposit {
+  top: 0px;
+  padding: 0 10px 5px 35px;
+  line-height: 1;
+  left: 0;
+  height: 36px;
+}
+.lot__card-sticker.sticker-deposit.type2 {background: #ffa01c;}
+.lot__card-sticker.sticker-email {
+  bottom: 10px;
+  left: 0;
+  height: 28px;
+  padding: 5px 15px 5px 28px;
+}
+.lot__card-sticker.sticker-email:after {
+  position: absolute;
+  content: "Победил";
+  top: -20px;
+  left: 5px;
+  font-size: 12px;
+}
+.auction__card-sticker.sticker-payment {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    bottom: -10px;
+    font-size: 11px;
+}
+.lot__card-sticker.sticker-win {
+  top: 10px;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 11px;
+  background: #ffa01c !important;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  width: 100%;
+}
+.lot__card-sticker.sticker-win:before {
+  display: none;
+}
+.lot__card-sticker-bigp {
+  font-size: 14px;
+  color: inherit;
+}
+.lot__card-sticker-smp {
+  font-weight: 300;
+  color: inherit;
+  padding: 5px 0 3px;
+}
+.lot__card-date {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.74);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 24px;
+}
+.lot__card-date.is-disabled {
+  display: none;
+}
+
+
+.lot__card-date.type2{
+  color: #ffffff;
+  font-weight: 300;
+  text-align: left;
+  padding: 7px 15px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(0, 0, 0.74) 0%,rgba(0,0,0,0.74) 83%,rgba(0,0,0,0) 100%);
+}
+.lot__card-date.type2::after{content: '';display: block;width: 100%;height: 20px;position: absolute;left: 0;bottom: 0;background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgb(0, 0, 0) 100%);z-index: 1;background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.74) 51%,rgba(0,0,0,0.74) 100%);}
+.lot__card-date.type2 .caption{
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 10px;
+}
+.lot__card-date.type2 .item{overflow: hidden;}
+.lot__card-date.type2 .item .user{
+  overflow: hidden;
+  float: left;
+  width: 63%;
+  overflow: hidden;
+}
+.lot__card-date.type2 .item .user .icon{float: left;width: 33px;}
+.lot__card-date.type2 .item .user .icon .noicon{
+  width: 17px;
+  height: 17px;
+  margin: 6px 0 0 8px;
+  border-radius: 50%;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.35;
+}
+.lot__card-date.type2 .item .user .icon .noicon.color1{background: #f79e1b;}
+.lot__card-date.type2 .item .user .name{
+  font-size: 12px;
+}
+.lot__card-date.type2 .item .time{
+  font-size: 24px;
+  font-weight: 600;
+  float: right;
+  width: 35%;
+  text-align: center;
+}
+.lot__card-date.type2 .item.winner{margin-top: 5px;}
+.lot__card-date.type2 .item.winner .user{}
+.lot__card-date.type2 .item.winner .user .icon{}
+.lot__card-date.type2 .item.winner .user .icon .noicon{position: relative;}
+.lot__card-date.type2 .item.winner .user .icon .noicon::before{width: 21px;height: 17px;content: '';display: block;position: absolute;top: -7px;right: -4px;background: url('../img/crownsmall.png');background-repeat: no-repeat;background-size: contain;}
+.lot__card-date.type2 .item.winner .user .name{padding-top: 8px; margin-left: 33px;}
+.lot__card-date.type2 .item.winner .time{}
+.lot__card-date.type2 .item.previous{opacity: 0.7;}
+.lot__card-date.type2 .item.previous .user{}
+.lot__card-date.type2 .item.previous .user .icon{width: 49px;}
+.lot__card-date.type2 .item.previous .user .icon .noicon{
+  width: 11px;
+  height: 11px;
+  margin: 1px 0 0 27px;
+  font-size: 7px;
+  line-height: 1.6;
+}
+.lot__card-date.type2 .item.previous .user .name{margin-top: 1px;margin-left: 49px;}
+.lot__card-date.type2 .item.previous .time{font-size: 12px;margin-top: 5px;}
+
+
+.lot__card-date-smp {
+  font-size: 12px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.lot__card-date-value {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.lot__card-date-value span {
+  font-weight: 600;
+}
+.lot__card-text {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+.lot__card-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.page.review .lot__card-heading {margin-bottom: 14px;}
+.lot__card-heading-title {
+  font-size: 28px;
+}
+.page.review .lot__card-heading-title {
+  margin: 13px 0 0;
+  line-height: 1.1;
+}
+.page.review .lot__card-heading-name {
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -moz-line-clamp: 2;
+  -ms-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  font-size: 13px;
+}
+.page.review form{}
+/*.page.review .lot__col1.row__col {padding-right: 45px;}*/
+.page.review form textarea {
+  background: #212327;
+  width: 100%;
+  margin: 7px auto;
+  border-radius: 7px;
+  color: #fff;
+  padding: 20px 14px;
+  font-size: 13px;
+  resize: none;
+  height: 182px;
+}
+.page.review form .bottom-block {
+  margin: 64px auto 132px;
+}
+.page.review form .bottom-block button {
+  background: #212327;
+  border-radius: 11px;
+  color: #fff;
+  padding: 14px;
+  font-size: 16px;
+  float: left;
+  width: 40%;
+  max-width: 271px;
+}
+.page.review form .bottom-block .dopblock {
+  float: right;
+  width: 50%;
+}
+.page.review form .bottom-block .dopblock .addfile {
+  cursor: pointer;
+  color: #ffa01c;
+  margin: 11px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.page.review form .bottom-block .dopblock .addfile::before {
+  background: url('../img/clip.png');
+  width: 25px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  margin: 0 7px 0 auto;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+.page.review form .bottom-block .dopblock .addfile:hover{}
+
+.lot__card-heading-places {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: right;
+}
+.lot__card-name {
+  display: block;
+}
+.lot__card-cost {
+  display: block;
+  margin-top: 20px;
+}
+.lot__card-cost_mobile {
+  display: none;
+}
+.lot__card-placesleft {
+  display: block;
+  color: inherit;
+  margin-top: 20px;
+}
+.lot__card-click-pay {
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -moz-line-clamp: 2;
+  -ms-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  font-weight: 300;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.lot__card-description {
+   line-height: 1.5;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -ms-box-orient: vertical;
+   box-orient: vertical;
+   -webkit-line-clamp: 2;
+   -moz-line-clamp: 2;
+   -ms-line-clamp: 2;
+   line-clamp: 2;
+   overflow: hidden;
+ }
+.lot__card-description.is-active {
+  display: block;
+}
+.lot__card-spoiler {
+  position: relative;
+  align-self: start;
+  font-size: 15px;
+  margin: 20px 0;
+  padding-right: 20px;
+  background: none;
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.4);
+}
+.lot__card-spoiler:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 1px;
+  height: 8px;
+  border: 1px solid #6d6f74;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: 0.3s ease;
+}
+.lot__card-spoiler:after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 1px;
+  height: 8px;
+  border: 1px solid #6d6f74;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.3s ease;
+}
+.lot__card-spoiler.is-active:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.lot__card-spoiler.is-active:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.lot__card-btn {
+  display: block;
+  align-self: start;
+  margin-top: auto;
+  font-size: 16px;
+  padding: 15px 20%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  background: none;
+}
+.lot__card-btn.is-blue {
+  color: #fff;
+  background: #ffa01c;
+}
+.lot__card-btn.is-yellow {
+  background: #f79e1b;
+  color: #fff;
+}
+.lot__card-btn.is-green {
+  background: #00a76b;
+  color: #fff;
+}
+.lot__card-btn.is-white {
+  background: #ffffff;
+  color: #000;
+  font-weight: 500;
+}
+.lot__card-btn.is-disabled {
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.07);
+}
+.lot__card-btn.is-enabled {
+  border: 1px solid #ffa01c;
+  color: #ffa01c;
+}
+.lot__card-btn.is-enabled:hover {
+  color: #fff;
+  background: #ffa01c;
+}
+.lot__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 30px;
+}
+.lot__tags {
+  position: relative;
+  display: flex;
+  margin: 20px -10px -10px;
+}
+.lot__tags-p {
+  position: relative;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.lot__tag {
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 15px 30px;
+}
+.lot__autoclick {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 15px;
+  border-radius: 17px;
+  width: 20%;
+}
+.lot__autoclick input {
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  height: 24px;
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.lot__autoclick input:before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.lot__autoclick input:checked {
+  background: #ffa01c;
+}
+.lot__autoclick input:checked:before {
+  left: 18px;
+}
+.lot__autoclick label {
+  margin: 0 15px;
+}
+.lot__autoclick-settings {
+  position: relative;
+  background: none;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+.lot__autoclick-settings img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.lot__review {
+  margin: 50px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 71.5%;
+  padding-bottom: 1px;
+}
+.lot__review-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  margin: 11px 0 30px 15px;
+}
+.lot__review-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.lot__review-date {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 3px 0;
+  font-size: 14px;
+}
+.lot__review-description {
+  margin: 30px 0;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.lot__review-description.mobile {display: none;}
+.lot__review-email {
+  margin: auto auto 0 0;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.74);
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 30px 5px 5px;
+  line-height: 1;
+}
+.lot__review-email:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 17px solid #00a76b;
+  margin-right: 12px;
+}
+.lot__review-video {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 460px;
+}
+.lot__review-video-wrapper {
+  position: relative;
+  flex: 1 1 45.9%;
+  max-height: 500px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.lot__review-video-playbtn {
+  position: absolute;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.74) url("../img/icons/videobtn.svg") center/auto
+  60% no-repeat;
+  border-radius: 20px;
+  padding: 15px 12%;
+  transition: 0.4s ease;
+}
+.lot__review-video-playbtn.is-active {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1024px){
+  .lot__card-text .min_height{min-height: 353px;}
+}
+
+@media (max-width: 1023px) {
+  .page.review .lot__card {
+    padding-bottom: 30px;
+    margin: 0 auto;
+  }
+  .page.review .lot-victory-text {margin-top: 9px;}
+  .lot__card-text {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .lot__col1,
+  .lot__col2 {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+  .lot__col1 {
+    flex-direction: column;
+  }
+  .lot__col2 {
+    margin-top: 25px;
+  }
+  .lot__card-btn {
+    order: -1;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .lot__card {
+    position: relative;
+  }
+  .lot__card-cost_mobile {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+  }
+  .lot__card-cost {
+    display: none;
+  }
+  .lot__card-text {
+    margin: 30px 0 0 0;
+  }
+  .lot__main {
+    flex-wrap: wrap;
+  }
+  .lot__autoclick {
+    width: auto;
+  }
+  .lot__review {
+    margin-top: 90px;
+    width: 60%;
+    position: relative;
+    flex-direction: column;
+    padding: 17px 17px 1px;
+  }
+  .lot__review-text {
+    margin: 11px 0 21px 15px;
+  }
+  .lot__review-video-wrapper {
+    margin-bottom: 0;
+  }
+  .lot__review-date {
+    max-width: 40%;
+    align-self: end;
+    text-align: right;
+    margin: -10px 6px;
+    font-size: 11px;
+  }
+  .lot__review-title {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    font-size: 22px;
+  }
+  .lot__review-email {
+    max-width: 60%;
+    word-break: break-word;
+    top: 13px;
+    left: 16px;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+    background: none;
+    padding: 0;
+  }
+  .lot__review-email:before {
+    border: 10px solid #00a76b;
+  }
+  .lot__review-description.desctop{display: none;}
+  .lot__review-description.mobile{display: block;}
+  .lot__review-video {height: 345px;}
+  .lot__review-description{font-size: 10px;margin: 21px 0;line-height: 1.55;}
+}
+.progress_mobile_pagination {
+  display: none;
+}
+.lot__progress-steps__mobile-swapper {
+  display: none !important;
+}
+.lot__progress-steps__desctop-swapper {
+  display: block;
+}
+@media (max-width: 540px) {
+  .page.review form .bottom-block .dopblock {
+    float: none;
+    width: auto;
+    clear: both;
+    padding: 15px 0;
+  }
+  .lot__progress-steps__mobile-swapper {
+    display: block !important;
+  }
+  .lot__progress-steps__desctop-swapper {
+    display: none;
+  }
+  .progress_mobile_pagination {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 164px !important;
+    z-index: 99;
+    background: #171a1e;
+    padding-top: 20px;
+  }
+  .progress_mobile_pagination span {
+    height: 4px !important;
+    width: 4px !important;
+    margin-right: 5px !important;
+  }
+  .progress_mobile_pagination .swiper-pagination-bullet-active {
+    width: 18px !important;
+  }
+  .lot__progress-steps {
+    height: 180px !important;
+  }
+  .lot__review {
+    width: 100%;
+  }
+  .lot__col1 {
+    padding-bottom: 90px;
+  }
+  .lot__card-heading {
+    flex-direction: column;
+  }
+  .lot__card-heading-places {
+    order: -1;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lot__card-heading-places span {
+    display: inline-block;
+    margin: 0 0 0 15px;
+  }
+  .lot__nav {
+    position: relative;
+  }
+  .lot__autoclick {
+    position: absolute;
+    left: 25px;
+    top: -622px;
+    width: calc(100% - 50px);
+  }
+  .lot__back-link {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .lot__back-link:before {
+    top: 20px;
+  }
+  .lot__button, .victory-error-wrapper {
+    display: none;
+  }
+  .lot__button-mobile-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .lot__button-mobile {
+    display: block;
+    width: 100%;
+    margin: 10px 0 40px;
+  }
+  .lot__button-mobile-wrapper .victory-error-wrapper .lot__button-mobile {
+    margin: 10px 0 20px;
+  }
+  .lot__button-mobile-wrapper__text {
+    display: block;
+    margin: 10px 0 40px;
+  }
+  .lot__card {
+    width: 100%;
+  }
+}
